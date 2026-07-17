@@ -17,7 +17,7 @@ This project is a responsive landing page for a functional restaurant or cafe. I
 - CSS3
 
 ## Status
- This project is currently a placeholder and will be developed as part of the Zhinttech Frontend Web Development course.
+ This project is currently a placeholder and will be developed as part of the Zhintech Frontend Web Development course.
 
 ## Author
 Azeezat Yusuf
