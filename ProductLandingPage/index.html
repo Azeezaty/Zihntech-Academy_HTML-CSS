@@ -8,41 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
          <!-- Navigation bar-->
-        <nav>
+        <div class="navBar">
+            <nav>
             
               <!-- Left Navigation -->
-            <ul class="navBar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <ul class="navLeft">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
-            </ul>
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html">Flores </a>
-            </div>
-            <!-- Right Icons -->
-            <div class="navIcons">
-                <a href="#"><i class="fa-regular fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <span>(0)</span>
-            </div>
+                </ul>
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">Flores </a>
+                </div>
+                <!-- Right Icons -->
+                <div class="navRight">
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span>(0)</span>
+                </div>
         </nav> 
-    </header>
-    <main>
-
+        </div>
         <!-- Hero Section -->
-        <section class="hero">
-            <!-- Hero Image -->
+        <section class="Hero">
             <div class="heroImage">
                 <img src="asset/images/heroImage.png" alt="Flores skincare product">
             </div>
-
+        </div>
             <!-- Hero Content -->
             <div class="heroContent">
                 <h1>
@@ -51,12 +49,243 @@
                     Products
                 </h1>
                 <p>
-                    Your skin need some help from us. Make sure to
+                    Your skin need some help from us. Make sure to <br>
                     watch our natural skin care products.
                 </p>
                 <a href="#" class="heroButton">SHOP NOW</a>
             </div>
         </section>
+    </header>
+    <main>
+        <!-- Features row -->
+        <section class="features">
+            <div class="feature">
+                <i class="fa-solid fa-truck-fast feature-icon"></i>
+                <h3>Quick Delivery</h3>
+                <p>Inside City delivery within 5 days</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-store feature-icon"></i>
+                <h3>Pick Up In Store</h3>
+                <p>We have option of pick up in store</p>
+                </div>
+            <div class="feature">
+                <i class="fa-solid fa-gift feature-icon"></i>
+                <h3>Special Packaging</h3>
+                <p>Our packaging is best for products</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-rotate-left feature-icon"></i>
+                <h3>Return Policy</h3>
+                <p>We will take return in some cases</p>
+            </div>
+        </section>
+
+        <!-- Who Are We section -->
+        <section id="about" class="who-we-are">
+            <div class="whoImage">
+                <img src="asset/images/Avatar1.png" alt="Woman with clear skin touching her face">
+            </div>
+            <div class="whoCopy">
+                <h2>Who Are We ?</h2>
+                <p class="p">We are the only best online store for best skin care solution.</p>
+                <p class="text">
+                    Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor cursusut porta.
+                </p>
+                <a href="#" class="btn-outline">About Us</a>
+            </div>
+        </section>
+       
+        <!-- Trending Products -->
+        <section id="shop" class="trending">
+            <h2 class="section-title">Trending Products</h2>
+
+            <div class="productGrid">
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Everdrop2.png" alt="Neauthy Cream">
+                    <div class="productOverlay">
+                        <span>Add To Cart</span>
+                    </div>
+                </div>
+                <h3>Neauthy Cream</h3>
+                <p class="price">$99.00</p>
+            </div>
+
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Everdrop.png" alt="Everdrop Handwash">
+                    <div class="productOverlay">
+                        <span>Add To Cart</span>
+                    </div>
+                </div>
+                <h3>Everdrop Handwash</h3>
+                <p class="price">$120.00</p>
+            </div>
+
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Muscle Gel.png" alt="CBD Muscle Gel">
+                    <div class="productOverlay">
+                        <span>Add To Cart</span>
+                    </div>
+                </div>
+                <h3>CBD Muscle Gel</h3>
+                <p class="price">$85.00</p>
+            </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="testimonial">
+            <blockquote>
+            &ldquo;A Pellen Tesque Pretium Feugiat Vel Morbi Sagittis Lorem Habi Tasse Cursus. Suspen Dise Tempus Oncu Enim Pellen Tesque Este Pretium In Neque, Elit Morbi Sagittis Lorem Habi Mattis.&rdquo;
+            </blockquote>
+            <p class="author">Anna Garcia</p>
+            <div class="testimonial-nav">
+                <button class="nav-arrow" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+                <span class="nav-divider"></span>
+                <button class="nav-arrow" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+         <!-- Latest Drops -->
+        <section class="trending">
+            <h2 class="section-title">Latest Drops</h2>
+
+            <div class="productGrid">
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Ordinary.png" alt="Neauthy Cream">
+                </div>
+                <h3>Ordinary</h3>
+                <p class="price">$95.00</p>
+            </div>
+
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Misolo.png" alt="Everdrop Handwash">
+                </div>
+                <h3>Misiolo</h3>
+                <p class="price">$86.00</p>
+            </div>
+
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Everdrop2.png" alt="CBD Muscle Gel">
+                </div>
+                <h3>Everdrop</h3>
+                <p class="price">$82.00</p>
+            </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+         <!-- Recent Blogs -->
+        <section id="blog" class="trending">
+            <h2 class="section-title">Latest Drops</h2>
+
+            <div class="productGrid">
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/SkinCare.png" alt="Neauthy Cream">
+                </div>
+                <h3>Skincare Brands for Women</h3>
+                <p class="price">Justo maecenas facilisi cursus fermentum enim viverra. </p>
+            </div>
+
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/Simple Habits.png" alt="Everdrop Handwash">
+                </div>
+                <h3>Easy skincare formula</h3>
+                <p class="price">Sed sed eleifend vel sed elementum pharetra quam.</p>
+            </div>
+
+            <div class="productCard">
+                <div class="productImage">
+                    <img src="asset/images/EasySkinCare.png" alt="CBD Muscle Gel">
+                </div>
+                <h3>Simple habits for good skin</h3>
+                <p class="price">Viverra fringilla amet quis sollicitudin scelerisque nibh.</p>
+            </div>
+            </div>
+            <a href="#" class="btn-outline">Read Blogs</a>
+
+            <div class="carousel-dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+
+        </section>
+        <!-- Subscribe -->
+        <section class="subscribe">
+            <h2 class="section-title">Subscribe To Get Updates</h2>
+            <form class="subscribe-form">
+            <input type="email" placeholder="Write your email address here..." required>
+            <button type="submit" aria-label="Subscribe">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            </form>
+        </section>
+
+        <!-- Instagram strip -->
+        <section class="instagram">
+            <div class="insta-grid">
+            <div class="insta-item">
+                <img src="asset/images/footer1.png" alt="Woman applying skincare">
+            </div>
+            <div class="insta-item insta-highlight">
+                <img src="asset/images/footer2.png" alt="Hands with skincare product">
+                <div class="insta-overlay">
+                <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="insta-item">
+                <img src="asset/images/footer3.png" alt="Skincare tubes with cucumber slices">
+            </div>
+            <div class="insta-item">
+                <img src="asset/images/footer4.png" alt="Yellow serum bottle">
+            </div>
+            <div class="insta-item">
+                <img src="asset/images/footer5.png" alt="Flowers and skincare bottle">
+            </div>
+            <div class="insta-item">
+                <img src="asset/images/footer6.png" alt="Dropper bottle with orange slice">
+            </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer">
+            <div class="footer-logo">Flores</div>
+            <nav class="footer-nav">
+                <a href="home">Home</a>
+                <a href="about">About</a>
+                <a href="shop">Shop</a>
+                <a href="blog">Blog</a>
+                <a href="contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </footer>
+
+                
     </main>
 </body>
 </html>
